@@ -1,0 +1,10 @@
+app:
+  server_name: "0.0.0.0"
+  server_port: 8000
+  debug: True
+model:
+  - name: grounding_dino
+    entrypoint: grounding_dino
+nim:
+  url: https://integrate.api.nvidia.com/v1
+  api_key: <API_KEY>

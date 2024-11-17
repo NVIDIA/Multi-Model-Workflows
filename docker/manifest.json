@@ -1,0 +1,5 @@
+{
+    "registry": "nvcr.io",
+    "repository": "nvstaging/tao/tao_multi_model_workflows",
+    "digest": "sha256:9f4f23fa99667ae3c9d4749568882cdf52ecaa74f7bc4806bb339e91d076c089"
+}

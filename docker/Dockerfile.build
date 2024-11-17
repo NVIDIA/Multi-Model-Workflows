@@ -1,0 +1,10 @@
+FROM nvcr.io/nvstaging/tao/tao-toolkit-pyt:v5.2.0-2135-dev-cuda11.6
+
+COPY docker/requirements.txt requirements.txt
+RUN pip install -r requirements.txt && \
+    rm requirements.txt
+
+RUN cd /opt && wget --content-disposition https://api.ngc.nvidia.com/v2/resources/nvidia/ngc-apps/ngc_cli/versions/3.43.0/files/ngccli_linux.zip -O ngccli_linux.zip && \
+    unzip ngccli_linux.zip
+
+ENV PATH=$PATH:/opt/ngc-cli
